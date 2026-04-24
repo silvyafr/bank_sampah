@@ -4,27 +4,100 @@ body {
   background: #f9f9f9;
 }
 
+/* CONTAINER */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* NAVBAR */
 nav {
   display: flex;
-  justify-content: space-between;
-  padding: 15px 40px;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
   background: white;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* SECTION */
 section {
   padding: 60px 20px;
   text-align: center;
 }
 
-h1 {
-  font-size: 40px;
+/* HERO */
+.hero {
+  background: #e8f5e9;
+  padding: 80px 20px;
 }
 
+/* CARD */
 .card {
   background: white;
   padding: 20px;
   margin: 20px auto;
   border-radius: 10px;
   max-width: 500px;
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #4CAF50;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* FORM */
+input, textarea {
+  width: 80%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* FLOW */
+.flow {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.flow div {
+  background: #4CAF50;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* DARK MODE */
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark .card {
+  background: #1e1e1e;
 }
