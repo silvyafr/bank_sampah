@@ -8,14 +8,21 @@
 </head>
 <body>
 
+<!-- HEADER -->
 <header>
     <div class="header-flex">
-        <h1>Bank Sampah Green Cikeas</h1>
-        <button onclick="toggleDarkMode()" class="dark-btn">Dark</button>
+        <div>
+            <h1>Bank Sampah Green Cikeas</h1>
+        </div>
+        <div style="text-align:right;">
+            <p>Telepon: 08xxxxxxxxxx</p>
+            <p>Alamat: Cikeas, Bogor</p>
+        </div>
     </div>
     <p>Mengelola Sampah, Menjaga Lingkungan</p>
 </header>
 
+<!-- NAV -->
 <nav>
     <a href="index.html">Beranda</a>
     <a href="edukasi.html">Edukasi</a>
@@ -23,39 +30,81 @@
     <a href="kontak.html">Kontak</a>
 </nav>
 
+<!-- WELCOME -->
 <section class="card">
     <h2>Selamat Datang</h2>
-    <p>Website ini memberikan informasi pengelolaan sampah berbasis masyarakat.</p>
+    <p>
+        Selamat datang di website Bank Sampah Green Cikeas. Kami hadir untuk membantu masyarakat
+        dalam mengelola sampah rumah tangga menjadi sesuatu yang lebih bermanfaat dan bernilai.
+        Dengan sistem yang sederhana dan transparan, kami berkomitmen untuk menciptakan lingkungan
+        yang lebih bersih sekaligus memberikan manfaat ekonomi bagi masyarakat.
+    </p>
 </section>
 
-<section>
-    <h2>Artikel Terbaru</h2>
-    <div class="grid">
-        <div class="card hover">
-            <img src="https://via.placeholder.com/300" alt="sampah">
-            <h3>Cara Memilah Sampah</h3>
-            <p>Pisahkan sampah dari rumah untuk memudahkan daur ulang.</p>
-            <a href="artikel1.html" class="btn">Baca</a>
-        </div>
+<!-- STATISTIK -->
+<section class="card">
+    <h2>Statistik Nasabah</h2>
+    <h3>< 100 Orang</h3>
+    <p>Sudah lebih dari 100 orang mempercayakan pengelolaan sampahnya kepada kami.</p>
+</section>
 
-        <div class="card hover">
-            <img src="https://via.placeholder.com/300" alt="bank sampah">
-            <h3>Manfaat Bank Sampah</h3>
-            <p>Lingkungan bersih sekaligus bernilai ekonomi.</p>
-            <a href="artikel2.html" class="btn">Baca</a>
-        </div>
-    </div>
+<!-- AGENDA -->
+<section class="card">
+    <h2>Agenda Kegiatan</h2>
+    <ul>
+        <li>3 April - Penimbangan Sampah Bulanan</li>
+        <li>9 Mei - Penimbangan Sampah Bulanan</li>
+    </ul>
+</section>
+
+<!-- MANFAAT -->
+<section class="card">
+    <h2>Manfaat Menjadi Nasabah</h2>
+    <ul>
+        <li>Rumah lebih bersih dari sampah</li>
+        <li>Mendapat tabungan dari hasil penimbangan</li>
+        <li>Setiap jenis sampah memiliki nilai ekonomi</li>
+        <li>Meningkatkan kesadaran lingkungan</li>
+    </ul>
+</section>
+
+<!-- LOKASI -->
+<section class="card">
+    <h2>Lokasi Penimbangan</h2>
+    <img src="https://via.placeholder.com/600x300" alt="lokasi">
+    <p>Penimbangan dilakukan di area Bank Sampah Green Cikeas.</p>
+    
+    <!-- MAP (opsional nanti bisa diganti link asli) -->
+    <iframe 
+        src="https://maps.google.com/maps?q=cikeas&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%" height="250" style="border:0;">
+    </iframe>
+</section>
+
+<!-- ALUR -->
+<section class="card">
+    <h2>Alur Bank Sampah</h2>
+    <ol>
+        <li>Nasabah membawa sampah dari rumah yang sudah dipilah</li>
+        <li>Sampah ditimbang oleh panitia</li>
+        <li>Jenis dan berat sampah dicatat</li>
+        <li>Panitia menghitung pendapatan nasabah</li>
+        <li>Panitia menghitung harga jual ke pengepul</li>
+    </ol>
+</section>
+
+<!-- PENUTUP -->
+<section class="closing">
+    <h2>Bersama Menjaga Lingkungan</h2>
+    <p>
+        Mari bersama-sama menjaga kebersihan lingkungan dan menjadikan sampah sebagai sumber
+        nilai ekonomi yang bermanfaat.
+    </p>
 </section>
 
 <footer>
     <p>© 2026 Bank Sampah Green Cikeas</p>
 </footer>
-
-<script>
-function toggleDarkMode(){
-    document.body.classList.toggle("dark");
-}
-</script>
 
 </body>
 </html>
