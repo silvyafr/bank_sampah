@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bank Sampah Green Cikeas</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bank Sampah Green Cikeas</title>
+
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- HEADER -->
-<header>
+<header class="hero">
     <div class="header-flex">
-        <div>
-            <h1>Bank Sampah Green Cikeas</h1>
-        </div>
-        <div style="text-align:right;">
+        <h1>Bank Sampah Green Cikeas</h1>
+        <div class="contact">
             <p>Telepon: 08xxxxxxxxxx</p>
             <p>Alamat: Cikeas, Bogor</p>
         </div>
     </div>
-    <p>Mengelola Sampah, Menjaga Lingkungan</p>
+    <p class="tagline">Mengelola Sampah, Menjaga Lingkungan</p>
 </header>
 
 <!-- NAV -->
@@ -31,34 +33,41 @@
 </nav>
 
 <!-- WELCOME -->
-<section class="card">
+<section class="card fade-in">
     <h2>Selamat Datang</h2>
     <p>
         Selamat datang di website Bank Sampah Green Cikeas. Kami hadir untuk membantu masyarakat
-        dalam mengelola sampah rumah tangga menjadi sesuatu yang lebih bermanfaat dan bernilai.
-        Dengan sistem yang sederhana dan transparan, kami berkomitmen untuk menciptakan lingkungan
-        yang lebih bersih sekaligus memberikan manfaat ekonomi bagi masyarakat.
+        dalam mengelola sampah rumah tangga menjadi sesuatu yang lebih bermanfaat dan bernilai ekonomi.
+        Dengan sistem yang sederhana dan transparan, kami berkomitmen menciptakan lingkungan yang lebih
+        bersih serta meningkatkan kesadaran masyarakat terhadap pentingnya pengelolaan sampah.
     </p>
 </section>
 
 <!-- STATISTIK -->
-<section class="card">
+<section class="card fade-in">
     <h2>Statistik Nasabah</h2>
-    <h3>< 100 Orang</h3>
-    <p>Sudah lebih dari 100 orang mempercayakan pengelolaan sampahnya kepada kami.</p>
+    <h3 id="counter">0</h3>
+    <p>Sudah lebih dari 100 orang mempercayakan pengelolaan sampah kepada kami.</p>
 </section>
 
 <!-- AGENDA -->
-<section class="card">
+<section class="card fade-in">
     <h2>Agenda Kegiatan</h2>
-    <ul>
-        <li>3 April - Penimbangan Sampah Bulanan</li>
-        <li>9 Mei - Penimbangan Sampah Bulanan</li>
-    </ul>
+    <div class="agenda">
+        <div class="agenda-card">
+            <div class="date">3</div>
+            <p>April<br>Penimbangan</p>
+        </div>
+
+        <div class="agenda-card">
+            <div class="date">9</div>
+            <p>Mei<br>Penimbangan</p>
+        </div>
+    </div>
 </section>
 
 <!-- MANFAAT -->
-<section class="card">
+<section class="card fade-in">
     <h2>Manfaat Menjadi Nasabah</h2>
     <ul>
         <li>Rumah lebih bersih dari sampah</li>
@@ -69,12 +78,9 @@
 </section>
 
 <!-- LOKASI -->
-<section class="card">
+<section class="card fade-in">
     <h2>Lokasi Penimbangan</h2>
     <img src="https://via.placeholder.com/600x300" alt="lokasi">
-    <p>Penimbangan dilakukan di area Bank Sampah Green Cikeas.</p>
-    
-    <!-- MAP (opsional nanti bisa diganti link asli) -->
     <iframe 
         src="https://maps.google.com/maps?q=cikeas&t=&z=13&ie=UTF8&iwloc=&output=embed"
         width="100%" height="250" style="border:0;">
@@ -82,29 +88,44 @@
 </section>
 
 <!-- ALUR -->
-<section class="card">
+<section class="card fade-in">
     <h2>Alur Bank Sampah</h2>
-    <ol>
-        <li>Nasabah membawa sampah dari rumah yang sudah dipilah</li>
-        <li>Sampah ditimbang oleh panitia</li>
-        <li>Jenis dan berat sampah dicatat</li>
-        <li>Panitia menghitung pendapatan nasabah</li>
-        <li>Panitia menghitung harga jual ke pengepul</li>
-    </ol>
+    <div class="flow">
+        <div class="flow-box">Bawa Sampah</div>
+        <div class="arrow">→</div>
+        <div class="flow-box">Timbang</div>
+        <div class="arrow">→</div>
+        <div class="flow-box">Catat</div>
+        <div class="arrow">→</div>
+        <div class="flow-box">Hitung</div>
+    </div>
 </section>
 
 <!-- PENUTUP -->
-<section class="closing">
+<section class="closing fade-in">
     <h2>Bersama Menjaga Lingkungan</h2>
-    <p>
-        Mari bersama-sama menjaga kebersihan lingkungan dan menjadikan sampah sebagai sumber
-        nilai ekonomi yang bermanfaat.
-    </p>
+    <p>Mari bersama menciptakan lingkungan bersih dan menjadikan sampah sebagai sumber nilai ekonomi.</p>
 </section>
 
 <footer>
     <p>© 2026 Bank Sampah Green Cikeas</p>
 </footer>
+
+<!-- SCRIPT ANGKA -->
+<script>
+let count = 0;
+let target = 100;
+let counter = document.getElementById("counter");
+
+let interval = setInterval(() => {
+    if(count >= target){
+        clearInterval(interval);
+    } else {
+        count++;
+        counter.innerText = count;
+    }
+}, 20);
+</script>
 
 </body>
 </html>
